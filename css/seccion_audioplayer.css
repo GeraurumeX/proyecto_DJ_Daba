@@ -1,0 +1,103 @@
+/*------------------ CONTAINER GENERAL ---------------------------------->*/
+.container-audioplayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../images/bg-audio-player.jpg);
+    background-size: cover;
+    background-color: #d3d3d3;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+/*------------------- AUDIO PLAYER  --------------------------------------------->*/
+.center {
+    margin: 25%;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+audio {
+    transition: all 0.5s linear;
+    box-shadow: 2px 2px 4px 0px #1b45f9;
+    border-radius: 7px;
+}
+
+/*------------------------  TEXT GLOWING --------------------------------------*/
+.container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+    /*background: #000;*/
+}
+
+h2 {
+    font-size: 6em;
+    color: #151aff;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 span {
+    animation: animate 1.5s linear infinite;
+}
+
+h2 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h2 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+h2 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+h2 span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+h2 span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+h2 span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+h2 span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+h2 span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+h2 span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+@keyframes animate {
+    0%,
+    80% {
+        color: #151aff;
+        text-shadow: none;
+    }
+    100% {
+        color: #151aff;
+        text-shadow: 0 0 10px #151aff, 0 0 20px #151aff, 0 0 36px #fff,
+            0 0 52px #151aff, 0 0 68px #fff, 0 0 84px #fff, 0 0 100px #fff,
+            0 0 116px #fff, 0 0 132px #fff, 0 0 148px #fff, 0 0 160px #fff;
+    }
+}
